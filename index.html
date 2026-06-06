@@ -3,556 +3,548 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ADC 인쇄소 | Print On Demand</title>
+  <title>ADC PRINT | Print On Demand</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- ========== HEADER ========== -->
   <header class="header" id="header">
-    <div class="container header__inner">
+    <div class="header__inner">
       <a href="#" class="logo">
-        <span class="logo__adc">ADC</span>
-        <span class="logo__sub">PRINT</span>
+        <span class="logo__mark">ADC</span><span class="logo__dot">.</span>
       </a>
       <nav class="nav" id="nav">
-        <ul class="nav__list">
-          <li><a href="#services">서비스</a></li>
-          <li><a href="#how">주문방법</a></li>
-          <li><a href="#products">제품</a></li>
-          <li><a href="#pricing">가격안내</a></li>
-          <li><a href="#contact">문의</a></li>
-        </ul>
+        <a href="#services">서비스</a>
+        <a href="#products">제품</a>
+        <a href="#how">주문방법</a>
+        <a href="#pricing">가격</a>
+        <a href="#contact">견적문의</a>
       </nav>
-      <a href="#contact" class="btn btn--primary">견적문의</a>
-      <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
-        <span></span><span></span><span></span>
-      </button>
+      <a href="#contact" class="btn-nav">견적 받기</a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero__bg"></div>
-    <div class="container hero__content">
-      <p class="hero__tag">소량 1장부터 대량 인쇄까지</p>
-      <h1 class="hero__title">당신의 아이디어를<br /><em>현실로 만드는</em> 인쇄소</h1>
-      <p class="hero__desc">ADC PRINT는 POD(Print on Demand) 방식으로<br />원하는 수량만큼, 원하는 퀄리티로 빠르게 인쇄해 드립니다.</p>
-      <div class="hero__cta">
-        <a href="#products" class="btn btn--primary btn--lg">제품 보기</a>
-        <a href="#how" class="btn btn--outline btn--lg">주문방법 안내</a>
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__gradient"></div>
+      <div class="hero__noise"></div>
+    </div>
+
+    <div class="hero__body">
+      <div class="hero__text" data-reveal>
+        <p class="hero__eyebrow">Print On Demand · Since 2015</p>
+        <h1 class="hero__title">
+          인쇄의<br />
+          <em>새로운 기준</em>
+        </h1>
+        <p class="hero__sub">1장부터 대량까지. 당일 출고, 정확한 색상,<br />투명한 가격. ADC가 만드는 인쇄 경험.</p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn-hero-primary">견적 무료 받기</a>
+          <a href="#products" class="btn-hero-ghost">제품 둘러보기 →</a>
+        </div>
       </div>
-      <div class="hero__stats">
-        <div class="stat">
-          <strong>15,000+</strong>
-          <span>누적 고객</span>
+
+      <!-- CSS Print Showcase -->
+      <div class="hero__scene" aria-hidden="true">
+        <div class="ps-glow"></div>
+
+        <div class="ps-item ps-poster">
+          <div class="ps-poster__stripe"></div>
+          <div class="ps-poster__circle"></div>
+          <div class="ps-poster__text">
+            <span></span><span></span><span></span>
+          </div>
         </div>
-        <div class="stat">
-          <strong>1일</strong>
-          <span>최단 제작일</span>
+
+        <div class="ps-item ps-card ps-card--1">
+          <div class="ps-card__logo"></div>
+          <div class="ps-card__lines"><span></span><span></span></div>
         </div>
-        <div class="stat">
-          <strong>1장</strong>
-          <span>최소 주문수량</span>
+        <div class="ps-item ps-card ps-card--2">
+          <div class="ps-card__bar"></div>
+          <div class="ps-card__lines"><span></span><span></span></div>
         </div>
-        <div class="stat">
-          <strong>99%</strong>
-          <span>고객 만족도</span>
+
+        <div class="ps-item ps-book">
+          <div class="ps-book__spine"></div>
+          <div class="ps-book__cover">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+
+        <div class="ps-item ps-sticker">
+          <div class="ps-sticker__dot ps-sticker__dot--1"></div>
+          <div class="ps-sticker__dot ps-sticker__dot--2"></div>
+          <div class="ps-sticker__dot ps-sticker__dot--3"></div>
+          <div class="ps-sticker__dot ps-sticker__dot--4"></div>
+          <div class="ps-sticker__dot ps-sticker__dot--5"></div>
+          <div class="ps-sticker__dot ps-sticker__dot--6"></div>
+        </div>
+
+        <div class="ps-dots">
+          <span style="background:#FF453A"></span>
+          <span style="background:#FF9F0A"></span>
+          <span style="background:#30D158"></span>
+          <span style="background:#0A84FF"></span>
+          <span style="background:#BF5AF2"></span>
         </div>
       </div>
     </div>
-    <div class="hero__scroll">
-      <span></span>
-      <p>스크롤</p>
+
+    <!-- Stats -->
+    <div class="hero__stats">
+      <div class="hstat" data-count="15000" data-suffix="+">
+        <strong class="hstat__num">0</strong>
+        <span>누적 고객</span>
+      </div>
+      <div class="hstat__div"></div>
+      <div class="hstat">
+        <strong class="hstat__num">1일</strong>
+        <span>최단 제작</span>
+      </div>
+      <div class="hstat__div"></div>
+      <div class="hstat" data-count="99" data-suffix="%">
+        <strong class="hstat__num">0</strong>
+        <span>고객 만족도</span>
+      </div>
+      <div class="hstat__div"></div>
+      <div class="hstat">
+        <strong class="hstat__num">1장</strong>
+        <span>최소 주문</span>
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint">
+      <div class="scroll-wheel"></div>
     </div>
   </section>
 
-  <!-- NOTICE TICKER -->
-  <div class="ticker">
-    <div class="ticker__track">
-      <span>✦ 빠른 배송 — 당일 출고 가능</span>
-      <span>✦ 소량 1장부터 주문 가능</span>
-      <span>✦ 친환경 대두유 잉크 사용</span>
-      <span>✦ 무료 디자인 교정 서비스</span>
-      <span>✦ 기업·단체 할인 문의 환영</span>
-      <span>✦ 빠른 배송 — 당일 출고 가능</span>
-      <span>✦ 소량 1장부터 주문 가능</span>
-      <span>✦ 친환경 대두유 잉크 사용</span>
-      <span>✦ 무료 디자인 교정 서비스</span>
-      <span>✦ 기업·단체 할인 문의 환영</span>
+  <!-- ========== MARQUEE ========== -->
+  <div class="marquee">
+    <div class="marquee__track">
+      <span>명함</span><span>·</span>
+      <span>포스터</span><span>·</span>
+      <span>스티커</span><span>·</span>
+      <span>패키지박스</span><span>·</span>
+      <span>에코백</span><span>·</span>
+      <span>현수막</span><span>·</span>
+      <span>책자</span><span>·</span>
+      <span>굿즈</span><span>·</span>
+      <span>브로셔</span><span>·</span>
+      <span>명함</span><span>·</span>
+      <span>포스터</span><span>·</span>
+      <span>스티커</span><span>·</span>
+      <span>패키지박스</span><span>·</span>
+      <span>에코백</span><span>·</span>
+      <span>현수막</span><span>·</span>
+      <span>책자</span><span>·</span>
+      <span>굿즈</span><span>·</span>
+      <span>브로셔</span><span>·</span>
     </div>
   </div>
 
-  <!-- SERVICES -->
+  <!-- ========== SERVICES ========== -->
   <section class="services section" id="services">
-    <div class="container">
-      <div class="section__head">
-        <p class="section__label">SERVICES</p>
-        <h2 class="section__title">어떤 인쇄든 가능합니다</h2>
-        <p class="section__desc">기획부터 인쇄, 후가공, 배송까지 원스톱으로 처리합니다.</p>
-      </div>
+    <div class="wrap">
+      <header class="sec-head" data-reveal>
+        <p class="sec-label">SERVICES</p>
+        <h2 class="sec-title">어떤 인쇄든,<br />ADC가 합니다.</h2>
+      </header>
       <div class="services__grid">
-        <div class="service-card">
-          <div class="service-card__icon">🖨️</div>
-          <h3>디지털 인쇄</h3>
-          <p>소량 주문에 최적화된 디지털 방식. 선명한 색상과 빠른 제작이 특징입니다.</p>
-          <ul>
-            <li>명함 · 전단지</li>
-            <li>포스터 · 배너</li>
-            <li>스티커 · 라벨</li>
-          </ul>
+        <article class="svc-card" data-reveal data-delay="0">
+          <div class="svc-card__visual" style="--c1:#a78bfa;--c2:#7c3aed;">
+            <div class="svc-card__icon">🖨️</div>
+          </div>
+          <div class="svc-card__body">
+            <h3>디지털 인쇄</h3>
+            <p>소량 1장부터 즉시 인쇄. 선명한 색상 재현, 빠른 제작.</p>
+            <ul><li>명함 · 전단지 · 포스터</li><li>스티커 · 라벨</li></ul>
+          </div>
+        </article>
+        <article class="svc-card" data-reveal data-delay="80">
+          <div class="svc-card__visual" style="--c1:#34d399;--c2:#059669;">
+            <div class="svc-card__icon">📚</div>
+          </div>
+          <div class="svc-card__body">
+            <h3>책·책자 인쇄</h3>
+            <p>브로셔, 포토북, 카탈로그. 제본까지 완성 납품.</p>
+            <ul><li>무선·중철 제본</li><li>포토북 · 메뉴판</li></ul>
+          </div>
+        </article>
+        <article class="svc-card" data-reveal data-delay="160">
+          <div class="svc-card__visual" style="--c1:#fb923c;--c2:#ea580c;">
+            <div class="svc-card__icon">🎁</div>
+          </div>
+          <div class="svc-card__body">
+            <h3>굿즈·기념품</h3>
+            <p>브랜드 굿즈부터 행사 기념품까지 맞춤 제작.</p>
+            <ul><li>에코백 · 머그컵</li><li>폰케이스 · 마우스패드</li></ul>
+          </div>
+        </article>
+        <article class="svc-card" data-reveal data-delay="240">
+          <div class="svc-card__visual" style="--c1:#f472b6;--c2:#db2777;">
+            <div class="svc-card__icon">✨</div>
+          </div>
+          <div class="svc-card__body">
+            <h3>후가공</h3>
+            <p>금·은박, 에폭시, UV코팅으로 한 단계 높은 완성도.</p>
+            <ul><li>금·은박 · UV코팅</li><li>에폭시 · 형압 · 타공</li></ul>
+          </div>
+        </article>
+        <article class="svc-card" data-reveal data-delay="320">
+          <div class="svc-card__visual" style="--c1:#38bdf8;--c2:#0284c7;">
+            <div class="svc-card__icon">📦</div>
+          </div>
+          <div class="svc-card__body">
+            <h3>패키지·박스</h3>
+            <p>브랜드 아이덴티티를 담은 패키지 박스 제작.</p>
+            <ul><li>쇼핑백 · 선물박스</li><li>테이프 · 포장지</li></ul>
+          </div>
+        </article>
+        <article class="svc-card" data-reveal data-delay="400">
+          <div class="svc-card__visual" style="--c1:#fbbf24;--c2:#d97706;">
+            <div class="svc-card__icon">🏳️</div>
+          </div>
+          <div class="svc-card__body">
+            <h3>대형 출력</h3>
+            <p>현수막, 롤업배너, 실사 출력. 대형 사이즈 전문.</p>
+            <ul><li>현수막 · 플래카드</li><li>롤업배너 · 포토월</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURE SPLIT ========== -->
+  <section class="feature section">
+    <div class="wrap">
+      <div class="feature__split" data-reveal>
+        <div class="feature__visual">
+          <div class="fv-scene">
+            <div class="fv-card fv-card--main">
+              <div class="fv-card__top"></div>
+              <div class="fv-card__lines"><span></span><span></span><span></span></div>
+              <div class="fv-card__badge">당일출고</div>
+            </div>
+            <div class="fv-card fv-card--back"></div>
+            <div class="fv-steps">
+              <div class="fv-step fv-step--done">접수</div>
+              <div class="fv-step fv-step--done">교정</div>
+              <div class="fv-step fv-step--active">인쇄</div>
+              <div class="fv-step">배송</div>
+            </div>
+            <div class="fv-ring fv-ring--1"></div>
+            <div class="fv-ring fv-ring--2"></div>
+          </div>
         </div>
-        <div class="service-card service-card--accent">
-          <div class="service-card__icon">📚</div>
-          <h3>책 · 책자 인쇄</h3>
-          <p>포토북, 브로셔, 카탈로그 등 제본까지 완성된 결과물을 제공합니다.</p>
-          <ul>
-            <li>무선제본 · 중철제본</li>
-            <li>포토북 · 앨범</li>
-            <li>메뉴판 · 카탈로그</li>
+        <div class="feature__text">
+          <p class="sec-label">FAST DELIVERY</p>
+          <h2>주문 당일,<br />바로 출고.</h2>
+          <p>오전 접수 기준 당일 출고 가능. 급한 행사, 촉박한 납기도 ADC는 맞춥니다. 전국 익일 배송 연계.</p>
+          <ul class="feature__list">
+            <li><span>✓</span> 오전 접수 → 당일 출고</li>
+            <li><span>✓</span> 전국 택배 익일 배송</li>
+            <li><span>✓</span> 긴급 주문 별도 상담 가능</li>
           </ul>
-        </div>
-        <div class="service-card">
-          <div class="service-card__icon">👕</div>
-          <h3>굿즈 · 기념품</h3>
-          <p>행사·브랜딩에 필요한 다양한 굿즈를 맞춤 제작해 드립니다.</p>
-          <ul>
-            <li>에코백 · 파우치</li>
-            <li>텀블러 · 머그컵</li>
-            <li>폰케이스 · 마우스패드</li>
-          </ul>
-        </div>
-        <div class="service-card">
-          <div class="service-card__icon">🎨</div>
-          <h3>후가공 서비스</h3>
-          <p>박 인쇄, 에폭시, 코팅 등 고급 후가공으로 차별화된 완성도를 높입니다.</p>
-          <ul>
-            <li>금·은박 / UV코팅</li>
-            <li>에폭시 · 엠보싱</li>
-            <li>타공 · 형압</li>
-          </ul>
-        </div>
-        <div class="service-card">
-          <div class="service-card__icon">📦</div>
-          <h3>패키지 · 박스</h3>
-          <p>브랜드 아이덴티티를 담은 패키지 박스와 포장재를 제작합니다.</p>
-          <ul>
-            <li>쇼핑백 · 선물박스</li>
-            <li>제품 포장재</li>
-            <li>테이프 · 포장지</li>
-          </ul>
-        </div>
-        <div class="service-card">
-          <div class="service-card__icon">🖼️</div>
-          <h3>대형 출력</h3>
-          <p>현수막, 롤업배너, 실사 출력 등 대형 사이즈 인쇄도 전문적으로 처리합니다.</p>
-          <ul>
-            <li>현수막 · 플래카드</li>
-            <li>롤업배너 · X배너</li>
-            <li>실사 출력 · 포토월</li>
-          </ul>
+          <a href="#contact" class="btn-outline">지금 주문하기 →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- HOW IT WORKS -->
-  <section class="how section" id="how">
-    <div class="container">
-      <div class="section__head">
-        <p class="section__label">HOW IT WORKS</p>
-        <h2 class="section__title">간편한 4단계 주문 프로세스</h2>
-      </div>
-      <div class="how__steps">
-        <div class="step">
-          <div class="step__num">01</div>
-          <div class="step__icon">📋</div>
-          <h3>상품 선택 &amp; 견적</h3>
-          <p>원하는 인쇄물 종류, 수량, 사이즈를 선택하고 실시간 견적을 확인하세요.</p>
-        </div>
-        <div class="step__arrow">→</div>
-        <div class="step">
-          <div class="step__num">02</div>
-          <div class="step__icon">📁</div>
-          <h3>파일 업로드</h3>
-          <p>완성된 디자인 파일을 업로드하거나, 디자인이 필요하면 요청해 주세요.</p>
-        </div>
-        <div class="step__arrow">→</div>
-        <div class="step">
-          <div class="step__num">03</div>
-          <div class="step__icon">✅</div>
-          <h3>교정 &amp; 결제</h3>
-          <p>전문가가 파일을 검토하고 교정 시안을 보내드린 후 결제를 진행합니다.</p>
-        </div>
-        <div class="step__arrow">→</div>
-        <div class="step">
-          <div class="step__num">04</div>
-          <div class="step__icon">🚚</div>
-          <h3>제작 &amp; 배송</h3>
-          <p>인쇄 완료 후 빠른 배송으로 고객님께 전달해 드립니다.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRODUCTS SHOWCASE -->
+  <!-- ========== PRODUCTS ========== -->
   <section class="products section" id="products">
-    <div class="container">
-      <div class="section__head">
-        <p class="section__label">PRODUCTS</p>
-        <h2 class="section__title">인기 제품</h2>
-        <p class="section__desc">가장 많이 찾으시는 제품들을 빠르고 합리적으로 제공합니다.</p>
-      </div>
-      <div class="products__filter">
-        <button class="filter-btn active" data-filter="all">전체</button>
-        <button class="filter-btn" data-filter="print">인쇄물</button>
-        <button class="filter-btn" data-filter="goods">굿즈</button>
-        <button class="filter-btn" data-filter="package">패키지</button>
+    <div class="wrap">
+      <header class="sec-head" data-reveal>
+        <p class="sec-label">PRODUCTS</p>
+        <h2 class="sec-title">인기 제품</h2>
+        <p class="sec-sub">가장 많이 찾는 제품들을 합리적인 가격으로.</p>
+      </header>
+      <div class="prod-filter" data-reveal>
+        <button class="pf-btn active" data-f="all">전체</button>
+        <button class="pf-btn" data-f="print">인쇄물</button>
+        <button class="pf-btn" data-f="goods">굿즈</button>
+        <button class="pf-btn" data-f="package">패키지</button>
       </div>
       <div class="products__grid" id="productsGrid">
-        <div class="product-card" data-category="print">
-          <div class="product-card__img" style="background:#f0e6ff;">
-            <div class="product-card__thumb">🪪</div>
+        <div class="prod-card" data-category="print" data-reveal data-delay="0">
+          <div class="prod-card__img" style="--bg:#ede9fe;">
+            <span>🪪</span>
           </div>
-          <div class="product-card__info">
+          <div class="prod-card__info">
             <h4>명함</h4>
-            <p>고급 코팅 · 다양한 용지</p>
-            <span class="price">100장 <strong>9,900원~</strong></span>
+            <p>다양한 용지 · 고급 코팅</p>
+            <span>100장 <strong>9,900원~</strong></span>
           </div>
         </div>
-        <div class="product-card" data-category="print">
-          <div class="product-card__img" style="background:#e6f0ff;">
-            <div class="product-card__thumb">📄</div>
+        <div class="prod-card" data-category="print" data-reveal data-delay="60">
+          <div class="prod-card__img" style="--bg:#dbeafe;">
+            <span>📄</span>
           </div>
-          <div class="product-card__info">
+          <div class="prod-card__info">
             <h4>전단지 · 리플릿</h4>
             <p>A4 · A5 · 3단 접지</p>
-            <span class="price">100장 <strong>19,000원~</strong></span>
+            <span>100장 <strong>19,000원~</strong></span>
           </div>
         </div>
-        <div class="product-card" data-category="print">
-          <div class="product-card__img" style="background:#fff0e6;">
-            <div class="product-card__thumb">🖼️</div>
+        <div class="prod-card" data-category="print" data-reveal data-delay="120">
+          <div class="prod-card__img" style="--bg:#fef3c7;">
+            <span>🖼️</span>
           </div>
-          <div class="product-card__info">
+          <div class="prod-card__info">
             <h4>포스터</h4>
-            <p>A3 · A2 · B2 사이즈</p>
-            <span class="price">1장 <strong>2,500원~</strong></span>
+            <p>A3 · A2 · B2</p>
+            <span>1장 <strong>2,500원~</strong></span>
           </div>
         </div>
-        <div class="product-card" data-category="goods">
-          <div class="product-card__img" style="background:#e6ffe6;">
-            <div class="product-card__thumb">👜</div>
+        <div class="prod-card" data-category="print" data-reveal data-delay="180">
+          <div class="prod-card__img" style="--bg:#dcfce7;">
+            <span>📌</span>
           </div>
-          <div class="product-card__info">
+          <div class="prod-card__info">
+            <h4>스티커 · 라벨</h4>
+            <p>낱장 · 롤 · 칼선</p>
+            <span>50매 <strong>5,000원~</strong></span>
+          </div>
+        </div>
+        <div class="prod-card" data-category="goods" data-reveal data-delay="0">
+          <div class="prod-card__img" style="--bg:#fce7f3;">
+            <span>👜</span>
+          </div>
+          <div class="prod-card__info">
             <h4>에코백</h4>
             <p>면 · 부직포 · 다양한 색상</p>
-            <span class="price">1개 <strong>4,500원~</strong></span>
+            <span>1개 <strong>4,500원~</strong></span>
           </div>
         </div>
-        <div class="product-card" data-category="goods">
-          <div class="product-card__img" style="background:#ffe6f0;">
-            <div class="product-card__thumb">☕</div>
+        <div class="prod-card" data-category="goods" data-reveal data-delay="60">
+          <div class="prod-card__img" style="--bg:#fff7ed;">
+            <span>☕</span>
           </div>
-          <div class="product-card__info">
+          <div class="prod-card__info">
             <h4>머그컵</h4>
-            <p>세라믹 · 풀컬러 인쇄</p>
-            <span class="price">1개 <strong>7,800원~</strong></span>
+            <p>세라믹 · 풀컬러</p>
+            <span>1개 <strong>7,800원~</strong></span>
           </div>
         </div>
-        <div class="product-card" data-category="print">
-          <div class="product-card__img" style="background:#f0ffe6;">
-            <div class="product-card__thumb">📌</div>
+        <div class="prod-card" data-category="package" data-reveal data-delay="0">
+          <div class="prod-card__img" style="--bg:#f0fdf4;">
+            <span>🛍️</span>
           </div>
-          <div class="product-card__info">
-            <h4>스티커 · 라벨</h4>
-            <p>칼선 · 롤 · 낱장</p>
-            <span class="price">50매 <strong>5,000원~</strong></span>
-          </div>
-        </div>
-        <div class="product-card" data-category="package">
-          <div class="product-card__img" style="background:#fff6e6;">
-            <div class="product-card__thumb">🛍️</div>
-          </div>
-          <div class="product-card__info">
+          <div class="prod-card__info">
             <h4>쇼핑백</h4>
             <p>종이 · 비닐 · 패브릭</p>
-            <span class="price">50개 <strong>35,000원~</strong></span>
+            <span>50개 <strong>35,000원~</strong></span>
           </div>
         </div>
-        <div class="product-card" data-category="package">
-          <div class="product-card__img" style="background:#e6f6ff;">
-            <div class="product-card__thumb">📦</div>
+        <div class="prod-card" data-category="package" data-reveal data-delay="60">
+          <div class="prod-card__img" style="--bg:#eff6ff;">
+            <span>📦</span>
           </div>
-          <div class="product-card__info">
+          <div class="prod-card__info">
             <h4>패키지 박스</h4>
             <p>맞춤 사이즈 · 고급 인쇄</p>
-            <span class="price">50개 <strong>45,000원~</strong></span>
+            <span>50개 <strong>45,000원~</strong></span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PRICING -->
-  <section class="pricing section" id="pricing">
-    <div class="container">
-      <div class="section__head">
-        <p class="section__label">PRICING</p>
-        <h2 class="section__title">투명한 가격 정책</h2>
-        <p class="section__desc">숨겨진 비용 없이 명확한 가격으로 제공합니다.</p>
+  <!-- ========== HOW IT WORKS ========== -->
+  <section class="how section" id="how">
+    <div class="wrap">
+      <header class="sec-head sec-head--light" data-reveal>
+        <p class="sec-label">HOW IT WORKS</p>
+        <h2 class="sec-title">4단계로 완성</h2>
+      </header>
+      <div class="how__grid">
+        <div class="how-step" data-reveal data-delay="0">
+          <div class="how-step__num">01</div>
+          <div class="how-step__icon">📋</div>
+          <h3>제품 선택 & 견적</h3>
+          <p>온라인 견적서에서 원하는 제품, 수량, 사양을 선택하고 예상 금액을 바로 확인하세요.</p>
+        </div>
+        <div class="how-step" data-reveal data-delay="100">
+          <div class="how-step__num">02</div>
+          <div class="how-step__icon">📁</div>
+          <h3>파일 업로드</h3>
+          <p>완성된 디자인 파일을 업로드. 디자인이 없다면 제작 의뢰도 가능합니다.</p>
+        </div>
+        <div class="how-step" data-reveal data-delay="200">
+          <div class="how-step__num">03</div>
+          <div class="how-step__icon">✅</div>
+          <h3>교정 & 결제</h3>
+          <p>전문가가 파일을 검토하고 교정 시안 확인 후 결제가 진행됩니다.</p>
+        </div>
+        <div class="how-step" data-reveal data-delay="300">
+          <div class="how-step__num">04</div>
+          <div class="how-step__icon">🚚</div>
+          <h3>제작 & 배송</h3>
+          <p>인쇄 완료 후 전국 배송. 급한 건 당일 출고도 가능합니다.</p>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ========== PRICING ========== -->
+  <section class="pricing section" id="pricing">
+    <div class="wrap">
+      <header class="sec-head" data-reveal>
+        <p class="sec-label">PRICING</p>
+        <h2 class="sec-title">투명한 가격</h2>
+        <p class="sec-sub">숨겨진 비용 없이 처음부터 명확하게.</p>
+      </header>
       <div class="pricing__grid">
-        <div class="pricing-card">
-          <div class="pricing-card__head">
-            <h3>소량 패키지</h3>
+        <div class="price-card" data-reveal data-delay="0">
+          <div class="price-card__head">
+            <h3>소량</h3>
             <p>개인 · 소규모 창업</p>
           </div>
-          <div class="pricing-card__price">
-            <strong>1장~</strong>
-            <span>최소수량 제한 없음</span>
-          </div>
-          <ul class="pricing-card__features">
-            <li>✓ 1장 단위 주문</li>
-            <li>✓ 디지털 인쇄</li>
-            <li>✓ 교정 1회 무료</li>
-            <li>✓ 평균 2~3일 제작</li>
-            <li>✓ 전국 택배 배송</li>
+          <div class="price-card__amount"><strong>1장~</strong><span>최소수량 없음</span></div>
+          <ul>
+            <li>1장 단위 주문</li>
+            <li>디지털 인쇄</li>
+            <li>교정 1회 무료</li>
+            <li>2~3일 제작</li>
+            <li>전국 택배</li>
           </ul>
-          <a href="#contact" class="btn btn--outline btn--block">문의하기</a>
+          <a href="#contact" class="btn-price-outline">문의하기</a>
         </div>
-        <div class="pricing-card pricing-card--featured">
-          <div class="pricing-card__badge">POPULAR</div>
-          <div class="pricing-card__head">
-            <h3>스탠다드 패키지</h3>
+        <div class="price-card price-card--feat" data-reveal data-delay="100">
+          <div class="price-card__badge">POPULAR</div>
+          <div class="price-card__head">
+            <h3>스탠다드</h3>
             <p>중소기업 · 브랜드</p>
           </div>
-          <div class="pricing-card__price">
-            <strong>할인 적용</strong>
-            <span>100개 이상 주문 시</span>
-          </div>
-          <ul class="pricing-card__features">
-            <li>✓ 수량 할인 자동 적용</li>
-            <li>✓ 오프셋 + 디지털</li>
-            <li>✓ 교정 3회 무료</li>
-            <li>✓ 평균 1~2일 제작</li>
-            <li>✓ 전국 무료배송</li>
+          <div class="price-card__amount"><strong>수량 할인</strong><span>100개 이상</span></div>
+          <ul>
+            <li>수량 할인 자동 적용</li>
+            <li>오프셋 + 디지털</li>
+            <li>교정 3회 무료</li>
+            <li>1~2일 제작</li>
+            <li>전국 무료배송</li>
           </ul>
-          <a href="#contact" class="btn btn--primary btn--block">견적 받기</a>
+          <a href="#contact" class="btn-price-primary">견적 받기</a>
         </div>
-        <div class="pricing-card">
-          <div class="pricing-card__head">
+        <div class="price-card" data-reveal data-delay="200">
+          <div class="price-card__head">
             <h3>엔터프라이즈</h3>
             <p>기업 · 대량 발주</p>
           </div>
-          <div class="pricing-card__price">
-            <strong>맞춤 견적</strong>
-            <span>1,000개 이상</span>
-          </div>
-          <ul class="pricing-card__features">
-            <li>✓ 전담 매니저 배정</li>
-            <li>✓ 최저가 보장</li>
-            <li>✓ 교정 무제한</li>
-            <li>✓ 당일 출고 가능</li>
-            <li>✓ 후가공 패키지 포함</li>
+          <div class="price-card__amount"><strong>맞춤 견적</strong><span>1,000개 이상</span></div>
+          <ul>
+            <li>전담 매니저 배정</li>
+            <li>최저가 보장</li>
+            <li>교정 무제한</li>
+            <li>당일 출고 가능</li>
+            <li>후가공 패키지</li>
           </ul>
-          <a href="#contact" class="btn btn--outline btn--block">상담 신청</a>
+          <a href="#contact" class="btn-price-outline">상담 신청</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- WHY ADC -->
+  <!-- ========== WHY ========== -->
   <section class="why section">
-    <div class="container">
-      <div class="section__head">
-        <p class="section__label">WHY ADC</p>
-        <h2 class="section__title">ADC PRINT를 선택해야 하는 이유</h2>
-      </div>
+    <div class="wrap">
+      <header class="sec-head sec-head--light" data-reveal>
+        <p class="sec-label">WHY ADC</p>
+        <h2 class="sec-title">선택해야 하는<br />6가지 이유</h2>
+      </header>
       <div class="why__grid">
-        <div class="why-item">
-          <div class="why-item__icon">⚡</div>
-          <h3>업계 최단 제작</h3>
-          <p>주문 접수 후 최단 당일 출고. 급한 행사도 걱정 없습니다.</p>
-        </div>
-        <div class="why-item">
-          <div class="why-item__icon">🎯</div>
-          <h3>정확한 색상 재현</h3>
-          <p>최신 인쇄 장비와 숙련된 기술로 디자인 원본에 가장 가까운 색상을 출력합니다.</p>
-        </div>
-        <div class="why-item">
-          <div class="why-item__icon">💰</div>
-          <h3>합리적인 가격</h3>
-          <p>중간 유통 없는 직접 제조로 시중 대비 최대 30% 저렴하게 제공합니다.</p>
-        </div>
-        <div class="why-item">
-          <div class="why-item__icon">🌿</div>
-          <h3>친환경 인쇄</h3>
-          <p>대두유 잉크와 FSC 인증 용지를 사용해 환경을 생각하는 인쇄를 지향합니다.</p>
-        </div>
-        <div class="why-item">
-          <div class="why-item__icon">🛡️</div>
-          <h3>품질 보증</h3>
-          <p>인쇄 불량 시 100% 무상 재제작을 보장합니다.</p>
-        </div>
-        <div class="why-item">
-          <div class="why-item__icon">💬</div>
-          <h3>전문가 상담</h3>
-          <p>인쇄 전문가가 파일부터 후가공까지 전 과정을 함께 도와드립니다.</p>
-        </div>
+        <div class="why-item" data-reveal data-delay="0"><span>⚡</span><h3>당일 출고</h3><p>오전 접수 기준 당일 제작 출고. 업계 최단 납기를 자랑합니다.</p></div>
+        <div class="why-item" data-reveal data-delay="80"><span>🎯</span><h3>정확한 색상</h3><p>최신 장비와 숙련 기술로 디자인 원본에 가장 가까운 색상을 구현합니다.</p></div>
+        <div class="why-item" data-reveal data-delay="160"><span>💰</span><h3>합리적 가격</h3><p>직접 제조로 시중 대비 최대 30% 저렴. 소량도 대량처럼 합리적으로.</p></div>
+        <div class="why-item" data-reveal data-delay="240"><span>🌿</span><h3>친환경 인쇄</h3><p>대두유 잉크와 FSC 인증 용지로 환경을 생각하는 인쇄를 실천합니다.</p></div>
+        <div class="why-item" data-reveal data-delay="320"><span>🛡️</span><h3>품질 보증</h3><p>인쇄 불량 발생 시 100% 무상 재제작을 보장합니다. 믿고 맡기세요.</p></div>
+        <div class="why-item" data-reveal data-delay="400"><span>💬</span><h3>전문가 상담</h3><p>파일부터 후가공까지 인쇄 전문가가 전 과정을 함께 합니다.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <section class="testimonials section">
-    <div class="container">
-      <div class="section__head">
-        <p class="section__label">REVIEWS</p>
-        <h2 class="section__title">고객 후기</h2>
-      </div>
-      <div class="testimonials__grid">
-        <div class="review-card">
-          <div class="review-card__stars">★★★★★</div>
-          <p>"명함 100장 주문했는데 다음날 바로 받았어요. 색감도 선명하고 종이 퀄리티도 기대 이상이었습니다."</p>
-          <div class="review-card__author">
-            <div class="review-card__avatar">김</div>
-            <div>
-              <strong>김OO님</strong>
-              <span>프리랜서 디자이너</span>
-            </div>
-          </div>
+  <!-- ========== REVIEWS ========== -->
+  <section class="reviews section">
+    <div class="wrap">
+      <header class="sec-head" data-reveal>
+        <p class="sec-label">REVIEWS</p>
+        <h2 class="sec-title">고객이 말합니다</h2>
+      </header>
+      <div class="reviews__grid">
+        <div class="review" data-reveal data-delay="0">
+          <div class="review__stars">★★★★★</div>
+          <p>"명함 100장을 주문했는데 다음날 바로 받았어요. 색감이 정말 선명하고 종이 퀄리티도 기대 이상이었습니다."</p>
+          <div class="review__author"><div class="review__avatar">김</div><div><strong>김○○님</strong><span>프리랜서 디자이너</span></div></div>
         </div>
-        <div class="review-card">
-          <div class="review-card__stars">★★★★★</div>
-          <p>"팝업스토어 준비하면서 급하게 현수막, 스티커, 쇼핑백을 한 번에 주문했는데 모두 완벽했습니다. 다음에도 꼭 이용할게요!"</p>
-          <div class="review-card__author">
-            <div class="review-card__avatar">이</div>
-            <div>
-              <strong>이OO님</strong>
-              <span>소품샵 운영자</span>
-            </div>
-          </div>
+        <div class="review" data-reveal data-delay="100">
+          <div class="review__stars">★★★★★</div>
+          <p>"팝업스토어 준비 중 급하게 현수막, 스티커, 쇼핑백을 한 번에 주문했는데 모두 완벽했습니다!"</p>
+          <div class="review__author"><div class="review__avatar">이</div><div><strong>이○○님</strong><span>소품샵 운영자</span></div></div>
         </div>
-        <div class="review-card">
-          <div class="review-card__stars">★★★★★</div>
+        <div class="review" data-reveal data-delay="200">
+          <div class="review__stars">★★★★★</div>
           <p>"기업 행사용 굿즈 제작을 맡겼는데 전담 매니저님이 꼼꼼하게 챙겨주셔서 아무 걱정 없이 행사를 마쳤습니다."</p>
-          <div class="review-card__author">
-            <div class="review-card__avatar">박</div>
-            <div>
-              <strong>박OO님</strong>
-              <span>기업 마케팅 담당자</span>
-            </div>
-          </div>
+          <div class="review__author"><div class="review__avatar">박</div><div><strong>박○○님</strong><span>기업 마케팅팀</span></div></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- QUOTE -->
+  <!-- ========== QUOTE ========== -->
   <section class="quote section" id="contact">
-    <div class="container">
-      <div class="section__head">
-        <p class="section__label">QUOTE</p>
-        <h2 class="section__title">온라인 견적서 작성</h2>
-        <p class="section__desc">항목을 선택하시면 예상 견적을 바로 확인할 수 있습니다.</p>
-      </div>
+    <div class="wrap">
+      <header class="sec-head sec-head--light" data-reveal>
+        <p class="sec-label">QUOTE</p>
+        <h2 class="sec-title">온라인 견적서</h2>
+        <p class="sec-sub">항목을 선택하면 예상 금액을 바로 확인할 수 있습니다.</p>
+      </header>
       <div class="quote__layout">
-
-        <!-- LEFT: FORM -->
         <div class="quote__form-wrap">
-
           <!-- Step Indicator -->
           <div class="q-steps">
-            <div class="q-step active" data-step="1">
-              <div class="q-step__circle">1</div>
-              <span>제품 선택</span>
-            </div>
+            <div class="q-step active" data-step="1"><div class="q-step__circle">1</div><span>제품 선택</span></div>
             <div class="q-step__line"></div>
-            <div class="q-step" data-step="2">
-              <div class="q-step__circle">2</div>
-              <span>사양 입력</span>
-            </div>
+            <div class="q-step" data-step="2"><div class="q-step__circle">2</div><span>사양 입력</span></div>
             <div class="q-step__line"></div>
-            <div class="q-step" data-step="3">
-              <div class="q-step__circle">3</div>
-              <span>고객 정보</span>
-            </div>
+            <div class="q-step" data-step="3"><div class="q-step__circle">3</div><span>고객 정보</span></div>
           </div>
 
-          <!-- PANEL 1: 제품 선택 -->
+          <!-- Panel 1 -->
           <div class="q-panel active" id="qPanel1">
             <h3 class="q-panel__title">어떤 제품을 인쇄하시나요?</h3>
             <div class="q-product-grid">
-              <label class="q-product-card">
-                <input type="radio" name="qProduct" value="명함" />
-                <div class="q-product-card__inner"><span>🪪</span><strong>명함</strong><small>90×52mm</small></div>
-              </label>
-              <label class="q-product-card">
-                <input type="radio" name="qProduct" value="전단지" />
-                <div class="q-product-card__inner"><span>📄</span><strong>전단지</strong><small>A4 · A5</small></div>
-              </label>
-              <label class="q-product-card">
-                <input type="radio" name="qProduct" value="포스터" />
-                <div class="q-product-card__inner"><span>🖼️</span><strong>포스터</strong><small>A3 · A2</small></div>
-              </label>
-              <label class="q-product-card">
-                <input type="radio" name="qProduct" value="스티커" />
-                <div class="q-product-card__inner"><span>📌</span><strong>스티커</strong><small>낱장 · 롤</small></div>
-              </label>
-              <label class="q-product-card">
-                <input type="radio" name="qProduct" value="책자" />
-                <div class="q-product-card__inner"><span>📚</span><strong>책자</strong><small>무선 · 중철</small></div>
-              </label>
-              <label class="q-product-card">
-                <input type="radio" name="qProduct" value="에코백" />
-                <div class="q-product-card__inner"><span>👜</span><strong>에코백</strong><small>면 · 부직포</small></div>
-              </label>
-              <label class="q-product-card">
-                <input type="radio" name="qProduct" value="패키지박스" />
-                <div class="q-product-card__inner"><span>📦</span><strong>패키지박스</strong><small>맞춤제작</small></div>
-              </label>
-              <label class="q-product-card">
-                <input type="radio" name="qProduct" value="현수막" />
-                <div class="q-product-card__inner"><span>🏳️</span><strong>현수막</strong><small>실사출력</small></div>
-              </label>
-              <label class="q-product-card">
-                <input type="radio" name="qProduct" value="기타" />
-                <div class="q-product-card__inner"><span>✏️</span><strong>기타</strong><small>직접 입력</small></div>
-              </label>
+              <label class="q-product-card"><input type="radio" name="qProduct" value="명함" /><div class="q-product-card__inner"><span>🪪</span><strong>명함</strong><small>90×52mm</small></div></label>
+              <label class="q-product-card"><input type="radio" name="qProduct" value="전단지" /><div class="q-product-card__inner"><span>📄</span><strong>전단지</strong><small>A4 · A5</small></div></label>
+              <label class="q-product-card"><input type="radio" name="qProduct" value="포스터" /><div class="q-product-card__inner"><span>🖼️</span><strong>포스터</strong><small>A3 · A2</small></div></label>
+              <label class="q-product-card"><input type="radio" name="qProduct" value="스티커" /><div class="q-product-card__inner"><span>📌</span><strong>스티커</strong><small>낱장 · 롤</small></div></label>
+              <label class="q-product-card"><input type="radio" name="qProduct" value="책자" /><div class="q-product-card__inner"><span>📚</span><strong>책자</strong><small>무선 · 중철</small></div></label>
+              <label class="q-product-card"><input type="radio" name="qProduct" value="에코백" /><div class="q-product-card__inner"><span>👜</span><strong>에코백</strong><small>면 · 부직포</small></div></label>
+              <label class="q-product-card"><input type="radio" name="qProduct" value="패키지박스" /><div class="q-product-card__inner"><span>📦</span><strong>패키지박스</strong><small>맞춤제작</small></div></label>
+              <label class="q-product-card"><input type="radio" name="qProduct" value="현수막" /><div class="q-product-card__inner"><span>🏳️</span><strong>현수막</strong><small>실사출력</small></div></label>
+              <label class="q-product-card"><input type="radio" name="qProduct" value="기타" /><div class="q-product-card__inner"><span>✏️</span><strong>기타</strong><small>직접 입력</small></div></label>
             </div>
-            <div class="q-panel__foot">
-              <button class="btn btn--primary" id="qNext1" disabled>다음 단계 →</button>
-            </div>
+            <div class="q-panel__foot"><button class="btn-q-primary" id="qNext1" disabled>다음 단계 →</button></div>
           </div>
 
-          <!-- PANEL 2: 사양 입력 -->
+          <!-- Panel 2 -->
           <div class="q-panel" id="qPanel2">
             <h3 class="q-panel__title">사양을 입력해 주세요</h3>
             <div class="q-form-grid">
-              <div class="form-group">
-                <label>사이즈</label>
-                <select id="qSize">
-                  <option value="">선택</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label>용지</label>
-                <select id="qPaper">
-                  <option value="">선택</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label>인쇄 면</label>
+              <div class="form-group"><label>사이즈</label><select id="qSize"><option value="">선택해 주세요</option></select></div>
+              <div class="form-group"><label>용지</label><select id="qPaper"><option value="">선택해 주세요</option></select></div>
+              <div class="form-group"><label>인쇄 면</label>
                 <div class="q-radio-group">
                   <label class="q-radio"><input type="radio" name="qSide" value="단면" checked /><span>단면</span></label>
                   <label class="q-radio"><input type="radio" name="qSide" value="양면" /><span>양면</span></label>
                 </div>
               </div>
-              <div class="form-group">
-                <label>수량</label>
+              <div class="form-group"><label>수량</label>
                 <div class="q-qty">
                   <button type="button" class="q-qty__btn" id="qQtyMinus">−</button>
                   <input type="number" id="qQty" value="100" min="1" max="100000" />
@@ -562,7 +554,7 @@
               </div>
             </div>
             <div class="form-group" style="margin-top:8px;">
-              <label>후가공 (복수 선택 가능)</label>
+              <label>후가공 (복수 선택)</label>
               <div class="q-check-group" id="qFinishGroup">
                 <label class="q-check"><input type="checkbox" value="무코팅" /><span>무코팅</span></label>
                 <label class="q-check"><input type="checkbox" value="유광코팅" /><span>유광코팅</span></label>
@@ -574,34 +566,21 @@
                 <label class="q-check"><input type="checkbox" value="타공" /><span>타공</span></label>
               </div>
             </div>
-            <div class="form-group" style="margin-top:8px;">
-              <label for="qDeadline">희망 납기일</label>
-              <input type="date" id="qDeadline" />
-            </div>
+            <div class="form-group" style="margin-top:8px;"><label for="qDeadline">희망 납기일</label><input type="date" id="qDeadline" /></div>
             <div class="q-panel__foot">
-              <button class="btn btn--outline" id="qPrev2">← 이전</button>
-              <button class="btn btn--primary" id="qNext2">다음 단계 →</button>
+              <button class="btn-q-outline" id="qPrev2">← 이전</button>
+              <button class="btn-q-primary" id="qNext2">다음 단계 →</button>
             </div>
           </div>
 
-          <!-- PANEL 3: 고객 정보 -->
+          <!-- Panel 3 -->
           <div class="q-panel" id="qPanel3">
             <h3 class="q-panel__title">고객 정보를 입력해 주세요</h3>
             <div class="q-form-grid">
-              <div class="form-group">
-                <label for="qName">이름 / 업체명 <em>*</em></label>
-                <input type="text" id="qName" placeholder="홍길동 / (주)ADC" required />
-              </div>
-              <div class="form-group">
-                <label for="qPhone">연락처 <em>*</em></label>
-                <input type="tel" id="qPhone" placeholder="010-0000-0000" required />
-              </div>
-              <div class="form-group">
-                <label for="qEmail">이메일</label>
-                <input type="email" id="qEmail" placeholder="hello@example.com" />
-              </div>
-              <div class="form-group">
-                <label>디자인 파일</label>
+              <div class="form-group"><label for="qName">이름 / 업체명 <em>*</em></label><input type="text" id="qName" placeholder="홍길동 / (주)ADC" required /></div>
+              <div class="form-group"><label for="qPhone">연락처 <em>*</em></label><input type="tel" id="qPhone" placeholder="010-0000-0000" required /></div>
+              <div class="form-group"><label for="qEmail">이메일</label><input type="email" id="qEmail" placeholder="hello@example.com" /></div>
+              <div class="form-group"><label>디자인 파일</label>
                 <div class="q-radio-group">
                   <label class="q-radio"><input type="radio" name="qFile" value="있음" checked /><span>있음</span></label>
                   <label class="q-radio"><input type="radio" name="qFile" value="없음" /><span>없음</span></label>
@@ -609,164 +588,70 @@
                 </div>
               </div>
             </div>
-            <div class="form-group" style="margin-top:8px;">
-              <label for="qNote">추가 요청사항</label>
-              <textarea id="qNote" rows="3" placeholder="특이사항, 참고할 내용, 샘플 요청 등을 자유롭게 적어주세요."></textarea>
-            </div>
+            <div class="form-group" style="margin-top:8px;"><label for="qNote">추가 요청사항</label><textarea id="qNote" rows="3" placeholder="특이사항, 참고사항 등을 자유롭게 적어주세요."></textarea></div>
             <div class="q-panel__foot">
-              <button class="btn btn--outline" id="qPrev3">← 이전</button>
-              <button class="btn btn--primary btn--lg" id="qSubmit">견적서 제출하기 ✓</button>
+              <button class="btn-q-outline" id="qPrev3">← 이전</button>
+              <button class="btn-q-primary btn-q-submit" id="qSubmit">견적서 제출하기 ✓</button>
             </div>
           </div>
+        </div>
 
-        </div><!-- /.quote__form-wrap -->
-
-        <!-- RIGHT: SUMMARY -->
+        <!-- Summary -->
         <div class="quote__summary" id="quoteSummary">
-          <div class="qs-header">
-            <span>📋</span>
-            <strong>견적 요약</strong>
-          </div>
-
+          <div class="qs-header"><span>📋</span><strong>견적 요약</strong></div>
           <div class="qs-body">
-            <div class="qs-row" id="qsProduct">
-              <span class="qs-label">제품</span>
-              <span class="qs-val">—</span>
-            </div>
-            <div class="qs-row" id="qsSize">
-              <span class="qs-label">사이즈</span>
-              <span class="qs-val">—</span>
-            </div>
-            <div class="qs-row" id="qsPaper">
-              <span class="qs-label">용지</span>
-              <span class="qs-val">—</span>
-            </div>
-            <div class="qs-row" id="qsSide">
-              <span class="qs-label">인쇄 면</span>
-              <span class="qs-val">단면</span>
-            </div>
-            <div class="qs-row" id="qsQty">
-              <span class="qs-label">수량</span>
-              <span class="qs-val">100장</span>
-            </div>
-            <div class="qs-row" id="qsFinish">
-              <span class="qs-label">후가공</span>
-              <span class="qs-val">—</span>
-            </div>
-            <div class="qs-row" id="qsDeadline">
-              <span class="qs-label">납기 희망</span>
-              <span class="qs-val">—</span>
-            </div>
+            <div class="qs-row" id="qsProduct"><span class="qs-label">제품</span><span class="qs-val">—</span></div>
+            <div class="qs-row" id="qsSize"><span class="qs-label">사이즈</span><span class="qs-val">—</span></div>
+            <div class="qs-row" id="qsPaper"><span class="qs-label">용지</span><span class="qs-val">—</span></div>
+            <div class="qs-row" id="qsSide"><span class="qs-label">인쇄 면</span><span class="qs-val">단면</span></div>
+            <div class="qs-row" id="qsQty"><span class="qs-label">수량</span><span class="qs-val">100장</span></div>
+            <div class="qs-row" id="qsFinish"><span class="qs-label">후가공</span><span class="qs-val">—</span></div>
+            <div class="qs-row" id="qsDeadline"><span class="qs-label">납기 희망</span><span class="qs-val">—</span></div>
           </div>
-
           <div class="qs-price">
             <div class="qs-price__label">예상 견적</div>
             <div class="qs-price__amount" id="qsPriceAmount">—</div>
-            <div class="qs-price__note">* 후가공·배송비 별도 / 최종 견적은 담당자 확인 후 안내드립니다.</div>
+            <div class="qs-price__note">후가공·배송비 별도. 최종 견적은 담당자 확인 후 안내드립니다.</div>
           </div>
-
           <div class="qs-contact">
             <p>빠른 상담</p>
             <a href="tel:010-0000-0000">📞 010-0000-0000</a>
-            <a href="https://pf.kakao.com" target="_blank">💬 카카오 채널 문의</a>
-          </div>
-        </div>
-
-      </div><!-- /.quote__layout -->
-    </div>
-  </section>
-
-  <!-- CONTACT INFO -->
-  <section class="contact-info section">
-    <div class="container">
-      <div class="contact-info__grid">
-        <div class="ci-card">
-          <span>📞</span>
-          <div>
-            <strong>전화 상담</strong>
-            <a href="tel:010-0000-0000">010-0000-0000</a>
-            <small>평일 09:00 – 18:00</small>
-          </div>
-        </div>
-        <div class="ci-card">
-          <span>✉️</span>
-          <div>
-            <strong>이메일</strong>
-            <a href="mailto:hello@adcprint.kr">hello@adcprint.kr</a>
-            <small>24시간 접수 가능</small>
-          </div>
-        </div>
-        <div class="ci-card">
-          <span>💬</span>
-          <div>
-            <strong>카카오 채널</strong>
-            <a href="#">@ADC프린트</a>
-            <small>빠른 답변 보장</small>
-          </div>
-        </div>
-        <div class="ci-card">
-          <span>📍</span>
-          <div>
-            <strong>위치</strong>
-            <span>서울특별시 OO구 OO로 000</span>
-            <small>방문 상담 환영</small>
+            <a href="#">💬 카카오 채널 문의</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ========== CONTACT INFO ========== -->
+  <section class="cinfo section">
+    <div class="wrap">
+      <div class="cinfo__grid">
+        <div class="ci-card" data-reveal data-delay="0"><span>📞</span><div><strong>전화 상담</strong><a href="tel:010-0000-0000">010-0000-0000</a><small>평일 09:00–18:00</small></div></div>
+        <div class="ci-card" data-reveal data-delay="80"><span>✉️</span><div><strong>이메일</strong><a href="mailto:hello@adcprint.kr">hello@adcprint.kr</a><small>24시간 접수</small></div></div>
+        <div class="ci-card" data-reveal data-delay="160"><span>💬</span><div><strong>카카오 채널</strong><a href="#">@ADC프린트</a><small>빠른 답변 보장</small></div></div>
+        <div class="ci-card" data-reveal data-delay="240"><span>📍</span><div><strong>위치</strong><span>서울특별시 OO구 OO로 000</span><small>방문 상담 환영</small></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
   <footer class="footer">
-    <div class="container footer__inner">
+    <div class="wrap footer__inner">
       <div class="footer__brand">
-        <a href="#" class="logo">
-          <span class="logo__adc">ADC</span>
-          <span class="logo__sub">PRINT</span>
-        </a>
-        <p>소량 1장부터 대량까지, 빠르고 정확한 POD 인쇄 파트너</p>
+        <a href="#" class="logo logo--light"><span class="logo__mark">ADC</span><span class="logo__dot">.</span></a>
+        <p>소량 1장부터 대량까지,<br />빠르고 정확한 POD 인쇄 파트너</p>
         <div class="footer__sns">
-          <a href="#" aria-label="인스타그램">📸</a>
-          <a href="#" aria-label="네이버블로그">📝</a>
-          <a href="#" aria-label="카카오채널">💬</a>
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="Blog">📝</a>
+          <a href="#" aria-label="Kakao">💬</a>
         </div>
       </div>
-      <div class="footer__links">
-        <h4>서비스</h4>
-        <ul>
-          <li><a href="#services">디지털 인쇄</a></li>
-          <li><a href="#services">책 · 책자</a></li>
-          <li><a href="#services">굿즈 제작</a></li>
-          <li><a href="#services">패키지</a></li>
-          <li><a href="#services">대형 출력</a></li>
-        </ul>
-      </div>
-      <div class="footer__links">
-        <h4>정보</h4>
-        <ul>
-          <li><a href="#how">주문방법</a></li>
-          <li><a href="#pricing">가격안내</a></li>
-          <li><a href="#">파일 규격</a></li>
-          <li><a href="#">자주 묻는 질문</a></li>
-          <li><a href="#">이용약관</a></li>
-        </ul>
-      </div>
-      <div class="footer__links">
-        <h4>고객지원</h4>
-        <ul>
-          <li><a href="#contact">견적 문의</a></li>
-          <li><a href="tel:010-0000-0000">010-0000-0000</a></li>
-          <li><a href="mailto:hello@adcprint.kr">hello@adcprint.kr</a></li>
-          <li><span>평일 09:00–18:00</span></li>
-        </ul>
-      </div>
+      <div class="footer__links"><h4>서비스</h4><ul><li><a href="#services">디지털 인쇄</a></li><li><a href="#services">책·책자</a></li><li><a href="#services">굿즈 제작</a></li><li><a href="#services">패키지</a></li><li><a href="#services">대형 출력</a></li></ul></div>
+      <div class="footer__links"><h4>정보</h4><ul><li><a href="#how">주문방법</a></li><li><a href="#pricing">가격안내</a></li><li><a href="#">파일 규격</a></li><li><a href="#">자주 묻는 질문</a></li><li><a href="#">이용약관</a></li></ul></div>
+      <div class="footer__links"><h4>고객지원</h4><ul><li><a href="#contact">견적 문의</a></li><li><a href="tel:010-0000-0000">010-0000-0000</a></li><li><a href="mailto:hello@adcprint.kr">hello@adcprint.kr</a></li><li><span>평일 09:00–18:00</span></li></ul></div>
     </div>
-    <div class="footer__bottom">
-      <div class="container">
-        <p>사업자등록번호 000-00-00000 | 대표 홍길동 | 통신판매업신고 제0000-서울OO-0000호</p>
-        <p>&copy; 2026 ADC PRINT. All rights reserved.</p>
-      </div>
-    </div>
+    <div class="footer__bottom"><div class="wrap"><p>사업자등록번호 000-00-00000 | 대표 홍길동 | 통신판매업신고 제0000-서울OO-0000호</p><p>&copy; 2026 ADC PRINT. All rights reserved.</p></div></div>
   </footer>
 
   <script src="main.js"></script>
